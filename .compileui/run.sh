@@ -6,3 +6,6 @@ for file in ./.compileui/*.ui; do
     echo $PWD
     pyuic5 "$file" -o "app/modules/ui/${pureFileName//.ui/}_ui.py"
 done
+
+git add *
+git commit -a -m "Auto: UI Update"
