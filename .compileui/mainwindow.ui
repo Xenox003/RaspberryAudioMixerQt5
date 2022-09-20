@@ -41,7 +41,7 @@
   <customwidget>
    <class>Ui_VuMeter</class>
    <extends>QWidget</extends>
-   <header>vumeter_Ui.h</header>
+   <header>vumeter_ui.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
