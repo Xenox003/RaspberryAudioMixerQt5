@@ -1,6 +1,6 @@
 import sys
 
-from modules.ui.mainwindow import MainWindow
+from modules.ui.ui_main import MainWindow
 
 def main():
     window = MainWindow()
