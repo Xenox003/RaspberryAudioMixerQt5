@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="MixerWidget" name="testmixer" native="true">
+   <widget class="Ui_MixerWidget" name="testmixer" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -45,7 +45,7 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>MixerWidget</class>
+   <class>Ui_MixerWidget</class>
    <extends>QWidget</extends>
    <header>ui_mixer</header>
    <container>1</container>
