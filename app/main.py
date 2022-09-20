@@ -1,9 +1,9 @@
 import sys
 
-from modules.ui.mainwindow import MainWindow
+from modules.ui.mainwindow import UiMain
 
 def main():
-    window = MainWindow()
+    window = UiMain()
     
 
     sys.exit(window.app.exec())

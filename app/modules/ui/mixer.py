@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class MixerWidget():
+class MixerWidget(QtWidgets.QWidget):
     def setupUi(self, MixerWidget):
         MixerWidget.setObjectName("MixerWidget")
         MixerWidget.resize(100, 480)

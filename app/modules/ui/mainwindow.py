@@ -4,7 +4,7 @@ import sys
 from PyQt5 import QtCore,QtGui,QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from mixer import MixerWidget
+from .mixer import MixerWidget
 
 class MainWindow(object):
     def setupUi(self, MainWindow):
@@ -12,7 +12,8 @@ class MainWindow(object):
         MainWindow.resize(800, 480)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.testmixer = MixerWidget(self.centralwidget)
+        self.testmixer = MixerWidget()
+        self.testmixer.setupUi(self.centralwidget)
         self.testmixer.setGeometry(QtCore.QRect(0, 0, 100, 430))
         self.testmixer.setObjectName("testmixer")
         MainWindow.setCentralWidget(self.centralwidget)
