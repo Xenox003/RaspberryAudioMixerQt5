@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 480)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.testmixer = MixerWidget(self.centralwidget)
+        self.testmixer = Ui_MixerWidget(self.centralwidget)
         self.testmixer.setGeometry(QtCore.QRect(0, 0, 100, 430))
         self.testmixer.setObjectName("testmixer")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -40,4 +40,4 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-from ui_mixer import MixerWidget
+from ui_mixer import Ui_MixerWidget
