@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="VuMeter" name="widget" native="true">
+   <widget class="Ui_VuMeter" name="widget" native="true">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -39,9 +39,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>VuMeter</class>
+   <class>Ui_VuMeter</class>
    <extends>QWidget</extends>
-   <header>vumeter.h</header>
+   <header>vumeter_Ui.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
