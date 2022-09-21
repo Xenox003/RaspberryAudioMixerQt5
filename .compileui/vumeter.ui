@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>VuMeterWidget</class>
+ <widget class="QWidget" name="VuMeterWidget">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QWidget" name="widget" native="true">
+  <widget class="QWidget" name="GradientLeft" native="true">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -36,7 +36,7 @@ stop:0.75 rgba(255,255,0,255),
 stop:1 rgba(255, 0, 0, 255));</string>
    </property>
   </widget>
-  <widget class="QWidget" name="widget_2" native="true">
+  <widget class="QWidget" name="GradientRight" native="true">
    <property name="geometry">
     <rect>
      <x>30</x>
