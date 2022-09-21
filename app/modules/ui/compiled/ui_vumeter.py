@@ -11,14 +11,14 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(50, 430)
-        Form.setStyleSheet("")
-        self.widget = QtWidgets.QWidget(Form)
-        self.widget.setGeometry(QtCore.QRect(0, -1, 20, 431))
-        self.widget.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
+class Ui_VuMeterWidget(object):
+    def setupUi(self, VuMeterWidget):
+        VuMeterWidget.setObjectName("VuMeterWidget")
+        VuMeterWidget.resize(50, 430)
+        VuMeterWidget.setStyleSheet("")
+        self.GradientLeft = QtWidgets.QWidget(VuMeterWidget)
+        self.GradientLeft.setGeometry(QtCore.QRect(0, -1, 20, 431))
+        self.GradientLeft.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
 "x1:0,\n"
 "y1:1, \n"
 "x2:0, \n"
@@ -26,10 +26,10 @@ class Ui_Form(object):
 "stop:0 rgba(0, 255, 0, 255),\n"
 "stop:0.75 rgba(255,255,0,255), \n"
 "stop:1 rgba(255, 0, 0, 255));")
-        self.widget.setObjectName("widget")
-        self.widget_2 = QtWidgets.QWidget(Form)
-        self.widget_2.setGeometry(QtCore.QRect(30, 0, 20, 431))
-        self.widget_2.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
+        self.GradientLeft.setObjectName("GradientLeft")
+        self.GradientRight = QtWidgets.QWidget(VuMeterWidget)
+        self.GradientRight.setGeometry(QtCore.QRect(30, 0, 20, 431))
+        self.GradientRight.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
 "x1:0,\n"
 "y1:1, \n"
 "x2:0, \n"
@@ -37,11 +37,11 @@ class Ui_Form(object):
 "stop:0 rgba(0, 255, 0, 255),\n"
 "stop:0.75 rgba(255,255,0,255), \n"
 "stop:1 rgba(255, 0, 0, 255));")
-        self.widget_2.setObjectName("widget_2")
+        self.GradientRight.setObjectName("GradientRight")
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(VuMeterWidget)
+        QtCore.QMetaObject.connectSlotsByName(VuMeterWidget)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, VuMeterWidget):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        VuMeterWidget.setWindowTitle(_translate("VuMeterWidget", "Form"))
