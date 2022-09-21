@@ -14,7 +14,7 @@ class MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.testmixer = MixerWidget()
         self.testmixer.setupUi(self.centralwidget)
-        self.testmixer.setGeometry(QtCore.QRect(0, 0, 100, 430))
+        self.testmixer.setGeometry(QtCore.QRect(0, 0, 150, 430))
         self.testmixer.setObjectName("testmixer")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
