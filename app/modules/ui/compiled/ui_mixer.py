@@ -25,4 +25,4 @@ class Ui_MixerWidget(object):
     def retranslateUi(self, MixerWidget):
         _translate = QtCore.QCoreApplication.translate
         MixerWidget.setWindowTitle(_translate("MixerWidget", "Form"))
-from ui_mixer import Ui_VUMeterWidget
+from ui_vumeter import Ui_VUMeterWidget

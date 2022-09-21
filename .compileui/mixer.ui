@@ -28,7 +28,7 @@
   <customwidget>
    <class>Ui_VUMeterWidget</class>
    <extends>QWidget</extends>
-   <header>ui_mixer.h</header>
+   <header>ui_vumeter</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
