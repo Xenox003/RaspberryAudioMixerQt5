@@ -16,12 +16,12 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QWidget" name="GradientLeft" native="true">
+  <widget class="QFrame" name="MeterLeft">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>-1</y>
-     <width>20</width>
+     <x>10</x>
+     <y>0</y>
+     <width>10</width>
      <height>431</height>
     </rect>
    </property>
@@ -36,12 +36,12 @@ stop:0.75 rgba(255,255,0,255),
 stop:1 rgba(255, 0, 0, 255));</string>
    </property>
   </widget>
-  <widget class="QWidget" name="GradientRight" native="true">
+  <widget class="QFrame" name="MeterRight">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>0</y>
-     <width>20</width>
+     <width>10</width>
      <height>431</height>
     </rect>
    </property>
@@ -54,6 +54,32 @@ y2:0,
 stop:0 rgba(0, 255, 0, 255),
 stop:0.75 rgba(255,255,0,255), 
 stop:1 rgba(255, 0, 0, 255));</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="ClipLeft">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>10</width>
+     <height>430</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="ClipRight">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>10</width>
+     <height>430</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
    </property>
   </widget>
  </widget>
