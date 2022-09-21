@@ -16,9 +16,9 @@ class Ui_VuMeterWidget(object):
         VuMeterWidget.setObjectName("VuMeterWidget")
         VuMeterWidget.resize(50, 430)
         VuMeterWidget.setStyleSheet("")
-        self.GradientLeft = QtWidgets.QWidget(VuMeterWidget)
-        self.GradientLeft.setGeometry(QtCore.QRect(0, -1, 20, 431))
-        self.GradientLeft.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
+        self.MeterLeft = QtWidgets.QFrame(VuMeterWidget)
+        self.MeterLeft.setGeometry(QtCore.QRect(10, 0, 10, 431))
+        self.MeterLeft.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
 "x1:0,\n"
 "y1:1, \n"
 "x2:0, \n"
@@ -26,10 +26,10 @@ class Ui_VuMeterWidget(object):
 "stop:0 rgba(0, 255, 0, 255),\n"
 "stop:0.75 rgba(255,255,0,255), \n"
 "stop:1 rgba(255, 0, 0, 255));")
-        self.GradientLeft.setObjectName("GradientLeft")
-        self.GradientRight = QtWidgets.QWidget(VuMeterWidget)
-        self.GradientRight.setGeometry(QtCore.QRect(30, 0, 20, 431))
-        self.GradientRight.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
+        self.MeterLeft.setObjectName("MeterLeft")
+        self.MeterRight = QtWidgets.QFrame(VuMeterWidget)
+        self.MeterRight.setGeometry(QtCore.QRect(30, 0, 10, 431))
+        self.MeterRight.setStyleSheet("background-color: qlineargradient(spread:pad, \n"
 "x1:0,\n"
 "y1:1, \n"
 "x2:0, \n"
@@ -37,7 +37,15 @@ class Ui_VuMeterWidget(object):
 "stop:0 rgba(0, 255, 0, 255),\n"
 "stop:0.75 rgba(255,255,0,255), \n"
 "stop:1 rgba(255, 0, 0, 255));")
-        self.GradientRight.setObjectName("GradientRight")
+        self.MeterRight.setObjectName("MeterRight")
+        self.ClipLeft = QtWidgets.QFrame(VuMeterWidget)
+        self.ClipLeft.setGeometry(QtCore.QRect(10, 0, 10, 430))
+        self.ClipLeft.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.ClipLeft.setObjectName("ClipLeft")
+        self.ClipRight = QtWidgets.QFrame(VuMeterWidget)
+        self.ClipRight.setGeometry(QtCore.QRect(30, 0, 10, 430))
+        self.ClipRight.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.ClipRight.setObjectName("ClipRight")
 
         self.retranslateUi(VuMeterWidget)
         QtCore.QMetaObject.connectSlotsByName(VuMeterWidget)
